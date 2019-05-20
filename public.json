@@ -1,0 +1,20 @@
+{
+    "DestinationType":"physical",
+    "PartitionLayout":[
+        {"disk":"sda", "partition":1, "size":"512M", "type":"EFI"},
+        {"disk":"sda", "partition":2, "size":"512M", "type":"swap"},
+        {"disk":"sda", "partition":3, "size":"rest", "type":"linux"}
+    ],
+    "FilesystemTypes":[
+        {"disk":"sda", "partition":1, "type":"vfat"},
+        {"disk":"sda", "partition":2, "type":"swap"},
+        {"disk":"sda", "partition":3, "type":"ext4"}
+    ],
+    "PartitionMountPoints":[
+        {"disk":"sda", "partition":1, "mount":"/boot"},
+        {"disk":"sda", "partition":3, "mount":"/"}
+    ],
+    "Version": "latest",
+    "Bundles": ["kernel-native", "os-core", "os-core-update", "os-cloudguest", "bootloader"],
+    "IsterCloudInitSvc": "http://github.com/icis/"
+}
