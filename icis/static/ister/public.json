@@ -16,5 +16,5 @@
     ],
     "Version": "latest",
     "Bundles": ["kernel-native", "os-core", "os-core-update", "os-cloudguest", "bootloader"],
-    "IsterCloudInitSvc": "http://github.com/icis/"
+    "IsterCloudInitSvc": "https://raw.githubusercontent.com/eng4beer/clear/master/icis"
 }
